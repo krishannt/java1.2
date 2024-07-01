@@ -1,31 +1,39 @@
-import java.util.Scanner;
 
+class mobile {
+    String brand;
+    int price;
+    String network;
+     static  String name;
+
+     static{
+        name = "phone";
+     }
+
+     public mobile(){
+        brand ="";
+        price = 200;
+     }
+    public void show(){
+
+        System.out.println(brand+ " "+price+ " "+ name);
+        }
+}
 
 public class string1 {
-    
-    public static void PrintLatters(String str){
-        for(int i = 0; i<str.length();i++){
-            System.out.print(str.charAt(i) + " ");
-        }
-        System.out.println(" ");
-    }
-    
     public static void main(String[] args) {
-        char arr[]={'a' ,'b','c','d'};
-        String str = "abcd";
-        String str2 = new String("abcd");
 
-        Scanner sc = new Scanner(System.in);
-        String a;
-        String b;
-        a = sc.next();
-        b = sc.next();
-        String c = a+b;
-        System.out.println(a);
-        System.out.println(b);
-           System.out.println(a.length());
-           System.out.println(c);
-           System.out.println(c.charAt(5));
-           PrintLatters(a);
+       mobile obj1 = new mobile();
+       obj1.brand = "apple";
+       obj1.price = 1600;
+       mobile.name = "smartPhone";
+
+       mobile obj2 = new mobile();
+      
+
+
+    obj1.show();
+    obj2.show();
+         
+
     }
 }
